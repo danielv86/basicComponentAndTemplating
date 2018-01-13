@@ -6,11 +6,22 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'varró a király';
   events = ['sziget', 'efott', 'coca', 'pepsi'];
   show = true;
-  klikkeljunkide = true;
+  klikkeljunkide = false;
   inputContent: String;
+
+  pipeDemo = [
+    {
+      'id': 1,
+      'name': 'danielv'
+    },
+    {
+      'id': 2,
+      'name': 'Loj'
+    }
+  ];
 
   toggle() {
     this.show = !this.show;
