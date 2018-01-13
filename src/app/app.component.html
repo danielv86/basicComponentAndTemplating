@@ -11,7 +11,22 @@
   <p>Varró Dániel</p>
 </div>
 
-<button>asd</button>
+<div [ngClass]="{ 'valami': show }">
+  <p>ngClassDemo</p>
+</div>
+
+
+<input type="text" [(ngModel)]="inputContent">
+<div>
+  {{inputContent}}
+</div>
+
+<button (click)="toggle()"
+        (mouseover)="demo($event)"
+        [disabled]="klikkeljunkide"
+>Toggle
+</button>
+
 
 <app-alma></app-alma>
 <app-alma></app-alma>
