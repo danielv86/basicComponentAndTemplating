@@ -9,11 +9,12 @@ export class AppComponent {
   title = 'app';
   events = ['sziget', 'efott', 'coca', 'pepsi'];
   show = true;
-  klikkeljunkide = false;
-  inputContent = 'hat, het';
+  klikkeljunkide = true;
+  inputContent: String;
 
   toggle() {
     this.show = !this.show;
+    this.inputContent = 'hat, het';
   }
 
   demo(ev: MouseEvent) {
